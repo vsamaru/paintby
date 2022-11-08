@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
+    - run: npm install
       name: "Install dependencies from package-lock.json"
     - run: npm install pkg -g
       name: "Install pkg"
@@ -47,8 +47,7 @@ jobs:
       with:
         name: pbn-cli-win
         path: .\out\*
-      env:
-        CI: true
+      
     - run: mkdir artifacts
     - name: Download a Build Artifact zip
       uses: actions/download-artifact@v2.0.5
