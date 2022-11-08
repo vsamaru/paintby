@@ -17,6 +17,7 @@
     "@types/materialize-css": "^1.0.11",
     "@types/minimist": "^1.2.2",
     "canvas": "^2.10.2",
+    "gh-pages": "^4.0.0",
     "minimist": "^1.2.7",
     "svg2img": "^1.0.0-beta.2"
   }
